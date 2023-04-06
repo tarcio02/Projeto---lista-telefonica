@@ -14,6 +14,7 @@
             <img style=" text-align: center; width: 60px; height: 60px;" src="./img/livro-de-contato.png" alt="lista">
             </div>
         <form>
+            <input type="hidden" name="id"/>
             <input name="nome" type="text" maxlength="50" placeholder="Nome" required/>
             <input  name="telefone" type="text" maxlength="50" placeholder="Número" required/> 
             <input id="sub" type="submit" value="Salvar"/>
@@ -28,6 +29,31 @@
     <footer>
         &copy; 2023 - Todos os Direitos Reservados
     </footer>
-    <script src="./script.js"></script>
-</body>
+    <script>
+        let lista = localStorage.getItem("minhaLista");
+
+        const formulario = document.querySelector("form")
+        const ulPessoas = document.querySelector("ul")
+
+        if(lista) {
+            lista = JSON.parse(lista)
+        } else {
+            lista = [];
+        }
+        console.log(lista)
+
+        formulario.addEventListener("submit", function(e){
+            e.preventDefault()
+            let novaPessoa = new Object();
+            novaPessoa.nome = this.nome.value;
+            novaPessoa.telefone = this.telefone.value;
+
+            lista.push(novaPessoa);
+
+            this.reset();
+
+            localStorage.setItem("minhaLista", JSON.stringify(lista));
+        })
+
+    </script>
 </html>
