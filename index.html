@@ -29,31 +29,6 @@
     <footer>
         &copy; 2023 - Todos os Direitos Reservados
     </footer>
-    <script>
-        let lista = localStorage.getItem("minhaLista");
-
-        const formulario = document.querySelector("form")
-        const ulPessoas = document.querySelector("ul")
-
-        if(lista) {
-            lista = JSON.parse(lista)
-        } else {
-            lista = [];
-        }
-        console.log(lista)
-
-        formulario.addEventListener("submit", function(e){
-            e.preventDefault()
-            let novaPessoa = new Object();
-            novaPessoa.nome = this.nome.value;
-            novaPessoa.telefone = this.telefone.value;
-
-            lista.push(novaPessoa);
-
-            this.reset();
-
-            localStorage.setItem("minhaLista", JSON.stringify(lista));
-        })
-
-    </script>
+    <script src="./script.js"></script>
+</body>
 </html>

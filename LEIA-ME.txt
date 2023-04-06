@@ -1,0 +1,4 @@
+commit : js_listando_ctts
+
+* foi realizado a tranferência dos códigos JS que estavam no arquivo HTML para um arquivo JS própio;
+* foi criado umma função "listar() 'linha:28' " que pega os objetos "JSON" e lista eles no display para o usuário;
