@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+main{
+    width: 80%;
+    margin-left: 10%;
+    height: 850px;
+}
+
+.header{
+    margin-top: 20px;
+    display: flex;
+    flex-flow:row wrap;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 55%;
+    text-align: right;
+}
+
+form{
+    height: 150px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+input{
+    width: 90%;
+    padding: 8px 20px;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+#sub{
+    width: 50%;
+    background-color: lightgreen;
+}
+
+.list{
+    background-color: lightyellow;
+height: 580px;
+border-radius: 20px;
+border-top: 5px solid black;
+border-bottom:5px solid black ;
+font-size: 30px;
+}
+
+#Pesquisar{
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+footer{
+    font-size: 30px;
+    padding: 80px;
+    text-align: center;
+    background-color: lightyellow;
+    border-top: 5px solid black;
+    margin-top: 3%;
+}
+
+ul{
+    list-style: none;
+    overflow: scroll;
+    height: 90%;
+
+}
+
+li{
+    border-bottom: 1px solid rgb(201, 93, 30);
+margin-top: 5px;
+}
+
+button{
+    margin-left: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: red;
+}
