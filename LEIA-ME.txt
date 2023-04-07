@@ -1,4 +1,3 @@
-commit : js_listando_ctts
+commit : adicionando funções aos botões 
 
-* foi realizado a tranferência dos códigos JS que estavam no arquivo HTML para um arquivo JS própio;
-* foi criado umma função "listar() 'linha:28' " que pega os objetos "JSON" e lista eles no display para o usuário;
+* foi realizado a criação das funções "editar:50, excluir:56" que dão a funcionalidade aos botões dos contatos registrado
