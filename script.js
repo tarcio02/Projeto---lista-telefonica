@@ -25,24 +25,25 @@ formulario.addEventListener("submit", function(e){
     }
 
     this.reset();
-
+    this.id.value = null
+    
     salvarLS()
 
     listar();
 })
 
-function listar() {
+function listar(filtro='') {
     ulPessoas.innerHTML = "";
     lista.forEach((item, key) => {
 
-
+        if (item.nome.toUpperCase().indexOf(filtro.toUpperCase()) >= 0 || filtro =="") {
         linha = document.createElement('li');
 
         let s = `<button onClick="excluir(${key})">[Excluir]</button><button onClick="editar(${key})">[Editar]</button>`
 
         linha.innerHTML = " Nome:" + item.nome + "Telefone:" + item.telefone + s;
         ulPessoas.appendChild(linha);
-
+        }
     });
 }
 

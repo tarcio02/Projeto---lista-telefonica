@@ -1,3 +1,4 @@
-commit : adicionando funções aos botões 
+commit : "finalizando o js"
 
-* foi realizado a criação das funções "editar:50, excluir:56" que dão a funcionalidade aos botões dos contatos registrado
+* nesse coommit foi adicionando o função de pesquisar os contatos escrito dentro da função "listar:35" na linha 39,
+ e no propio parâmetro da função.
