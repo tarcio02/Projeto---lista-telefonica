@@ -1,0 +1,4 @@
+commit : "finalizando o js"
+
+* nesse coommit foi adicionando o função de pesquisar os contatos escrito dentro da função "listar:35" na linha 39,
+ e no propio parâmetro da função.
